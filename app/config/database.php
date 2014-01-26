@@ -48,19 +48,19 @@ return array(
 
 		'sqlite' => array(
 			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/production.sqlite',
+			'database' => __DIR__.'/../database/files/production.sqlite',
 			'prefix'   => '',
 		),
 
 		'sqlite-dev' => [
 			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/development.sqlite',
+			'database' => __DIR__.'/../database/files/development.sqlite',
 			'prefix'   => '',
 		],
 
 		'sqlite-sessions' => [
 			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/sessions.sqlite',
+			'database' => __DIR__.'/../database/files/sessions.sqlite',
 			'prefix'   => '',
 		],
 	),
