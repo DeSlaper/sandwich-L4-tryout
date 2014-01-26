@@ -60,7 +60,7 @@ return array(
 
 		'sqlite-sessions' => [
 			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/session.sqlite',
+			'database' => __DIR__.'/../database/sessions.sqlite',
 			'prefix'   => '',
 		],
 	),
