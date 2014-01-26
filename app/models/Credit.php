@@ -7,4 +7,12 @@ class Credit extends Eloquent {
 	 * @var string
 	 */
 	protected $table = 'credits';
+
+	/**
+	 * @todo document this...
+	 */
+	public function user()
+	{
+		return $this->belongsTo('User');
+	}
 }
