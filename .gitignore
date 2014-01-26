@@ -9,6 +9,6 @@ composer.lock
 Thumbs.db
 
 # databases should be what ever you like ;)
-/database/development.sqlite
-/database/production.sqlite
-/database/sessions.sqlite
+/app/database/development.sqlite
+/app/database/production.sqlite
+/app/database/sessions.sqlite
