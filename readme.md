@@ -1,5 +1,12 @@
 ## Project Sandwich
 
+### What is it about
+
+Well the title might said something about it.
+The exact project description will be provided later on. For now it's not much more then a simple database setup without anything done yet in the controllers and such...
+
+This project will be build on [Laravel 4.1](http://laravel.com)
+
 ### Todo after clone
 
 Get the framework...
@@ -8,6 +15,7 @@ Get the framework...
 
 Touch the databases
 	
+	mkdir app/database/files
 	touch app/database/files/production.sqlite
 	touch app/database/files/development.sqlite
 	touch app/database/files/sessions.sqlite
