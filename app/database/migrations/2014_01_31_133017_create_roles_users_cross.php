@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
-class CreateCreditsTable extends Migration {
+class CreateRolesUsersCross extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -11,23 +12,26 @@ class CreateCreditsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('credits', function($table)
-		{
+		Schema::create('roles_users_cross', function(Blueprint $table) {
 			$table->increments('id');
-			$table->integer('saldo');
+			$table->integer('role_id')
+			      ->unsigned();
 			$table->integer('user_id')
 			      ->unsigned();
-
 			$table->timestamps();
 
-			// Add a fk contraint to the user id
 			$table->foreign('user_id')
 			      ->references('id')
 			      ->on('users')
 			      ->onDelete('cascade');
 
+			$table->foreign('user_id')
+			      ->references('id')
+			      ->on('users')
+			      ->onDelete('cascade');
 		});
 	}
+
 
 	/**
 	 * Reverse the migrations.
@@ -36,7 +40,7 @@ class CreateCreditsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('credits');
+		Schema::drop('roles_users_cross');
 	}
 
 }
