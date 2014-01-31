@@ -26,5 +26,3 @@ Migrate some stuff and seed it
 
 Have fun.
 The project is far, realy like, this is version 0.0.0.0.1.a, that far from being done :D
-
-Test....
